@@ -25,7 +25,7 @@
  *
  * Default value is: 1 for LED_OFF
 */
-#define STARTUP_KNOB_LED_COLOR 0         // LED_OFF
+#define STARTUP_KNOB_LED_COLOR 2         // LED_OFF
 #define KEEP_KNOB_LED_COLOR_MARLIN_MODE  // Keeps the LED state in Marlin Mode
 
 /**
@@ -68,7 +68,7 @@
 /**
  *  Text displayed at the top of the TFT in Marlin Mode.
  */
-#define ST7920_BANNER_TEXT "LCD12864 Simulator"
+#define ST7920_BANNER_TEXT "MK N ~ Marlin Sim"
 
 /**
  *  show banner text at the top of the TFT in Marlin Mode.
@@ -154,9 +154,9 @@
 #define FAN_NUM      1    // set in 1~6
 
 //                         PLA      PETG      ABS
-#define PREHEAT_LABELS   {"PLA", "PETG", "ABS", "TPU"}
-#define PREHEAT_HOTEND   {200,   250,    230,   230}
-#define PREHEAT_BED      {60,    70,     100,   50}
+#define PREHEAT_LABELS   {"PLA", "ABS", "PETG", "TPU"}
+#define PREHEAT_HOTEND   {200,   240,    250,   230}
+#define PREHEAT_BED      {60,    70,     90,   50}
 
 #define HEAT_MAX_TEMP    {275,       275,       275,       275,       275,       275,       150,    60}   //max temperature can be set
 #define HEAT_SIGN_ID     {"T0:",     "T1:",     "T2:",     "T3:",     "T4:",     "T5:",     "B:",   "C:"}
@@ -189,9 +189,9 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 235
-#define Y_MAX_POS 235
-#define Z_MAX_POS 250
+#define X_MAX_POS 200
+#define Y_MAX_POS 200
+#define Z_MAX_POS 180
 
 // Specify a pause position as { X, Y, Z_raise }
 #define NOZZLE_PAUSE_RETRACT_LENGTH 15   // (mm)
@@ -219,20 +219,20 @@
 /**
  * Enable Unified Bed Leveling options.
  *  Will attempt to auto detect and enable specific UBL options.
- * 
+ *
  * WARNING - If you're not sure, leave on auto-detect or disabled.
  *           UBL has extra options other leveling systems might not have.
- * 
+ *
  * Options:  0: Disabled    1: Enabled    2: Auto-detect [default]
- * 
+ *
  */
 #define ENABLE_UBL_VALUE 2
 
 /**
  * Enable friendly probe offset language.
- * 
+ *
  * Decrease/increase and "-" & "+" icons are replaced with down/up and friendly icons
- * 
+ *
  * Options:  0: Disabled    1: Enabled
  */
 #define FRIENDLY_PROBE_OFFSET_LANGUAGE 1
